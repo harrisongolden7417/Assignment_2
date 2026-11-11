@@ -7,10 +7,84 @@
   <body>
     
         <%- include('partials/header') %>
-        <h1>About Me</h1>
 
-        <p>Welcome to my About Me page.</p>
-        <p>This page will contain information about my education, skills, and interests.</p>
+<!-- Personal background section -->
+<section>
+    <h1>About Me</h1>
+
+    <h2>Introduction</h2>
+
+    <p>
+        Hello! My name is Harrison Golden, and I am studying Networking and IT Security at Ontario Tech University.
+    </p>
+
+    <p>
+        I have developed an interest in technology, programming, and computer networks throughout my academic studies.
+    </p>
+</section>
+
+<!-- Education and technical experience -->
+<section>
+    <h2>Education and Skills</h2>
+
+    <p>
+        Through my university courses, I have gained experience with Python programming, including introductory programming and object-oriented programming concepts.
+    </p>
+
+    <p>
+        I have also studied networking and web development, allowing me to develop technical knowledge and problem-solving skills.
+    </p>
+
+    <h3>Technical Skills</h3>
+
+    <ul>
+        <li>Python Programming</li>
+        <li>Object-Oriented Programming</li>
+        <li>HTML and CSS</li>
+        <li>JavaScript Fundamentals</li>
+        <li>Computer Networking</li>
+    </ul>
+</section>
+
+<!-- Personal interests -->
+<section>
+    <h2>My Interests</h2>
+
+    <p>
+        Outside of university and work, I enjoy listening to music, playing video games, hiking, skiing, and practicing the piano.
+    </p>
+
+    <p>
+        These activities allow me to balance my academic responsibilities with my personal interests and hobbies.
+    </p>
+</section>
+
+
+<!-- Personal photo and video -->
+<section>
+    <h2>Personal Photo</h2>
+
+    <img src="/images/Me.png"
+         alt="My personal profile photo"
+         width="300">
+</section>
+
+<section>
+    <h2>My Piano Performance</h2>
+
+    <p>
+        One of my personal interests is playing the piano. Below is a short video of one of my performances.
+    </p>
+
+    <video controls
+           poster="/Images/Piano.png"
+           width="400">
+        <source src="/Videos/Piano.mp4"
+                type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</section>
+
 
         <%- include('partials/footer') %>
 

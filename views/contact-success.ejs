@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+   
+    <%- include('partials/header') %>
+
+<!-- Contact form confirmation -->
+    <section>
+        <h1>Form Submitted</h1>
+
+        <p>
+            Thank you, <%= name %>!
+        </p>
+
+        <p>
+            Your form submission has been received
+            by the application.
+        </p>
+
+        <p>
+            This demonstration form does not send
+            an email or permanently save messages.
+        </p>
+
+        <a href="/">Return to Home</a>
+    </section>
+
+    <%- include('partials/footer') %>
+
+
+
+  </body>
+</html>

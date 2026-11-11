@@ -6,13 +6,68 @@
   </head>
   <body>
     
-        <%- include('partials/header') %>
-        <h1>Contact Me</h1>
+        
+<%- include('partials/header') %>
 
-        <p>You can contact me through my email or social media profiles.</p>
-        <p>My contact information will be added here.</p>
+<!-- Contact page introduction -->
+<section>
+    <h1>Contact Me</h1>
 
-        <%- include('partials/footer') %>
+    <p>
+        Thank you for visiting my portfolio! If you would like to get in touch,
+        please complete the form below.
+    </p>
+</section>
+
+<!-- Contact form with HTML5 validation -->
+<section>
+    <h2>Send a Message</h2>
+
+    <form action="/contact" method="POST">
+
+        <p>
+            <label for="name">Full Name:</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+        </p>
+
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   pattern="[0-9]{10}"
+                   title="Enter a 10-digit phone number"
+                   required>
+        </p>
+
+        <p>
+            <label for="message">Message:</label>
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit Message</button>
+        </p>
+
+    </form>
+</section>
+
+<%- include('partials/footer') %>
+
 
   </body>
 </html>
