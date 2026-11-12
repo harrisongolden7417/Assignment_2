@@ -1,0 +1,85 @@
+
+/* Main website background and text */
+body {
+    background-color: #160D24;
+    color: #F5F5F5;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+    background: linear-gradient(to right, #6700ED, #1900ED);
+    padding: 15px;
+}
+
+/* Website title */
+.navbar-brand {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-link {
+    color: #F5F5F5;
+    margin-left: 15px;
+}
+
+/* Navigation link hover effect */
+.nav-link:hover {
+    color: #ED66D7;
+}
+
+/* Main page content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Content sections */
+section {
+    background-color: #251438;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/* Page headings */
+h1, h2 {
+    color: #ED66D7;
+}
+
+/* Links inside main content */
+main a {
+    color: #ED66D7;
+}
+
+/* Links when hovered */
+main a:hover {
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #6700ED, #B400ED);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer links */
+footer a {
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    color: #ED66D7;
+}
+
+/* Responsive images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
