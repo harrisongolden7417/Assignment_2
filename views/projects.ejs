@@ -7,58 +7,112 @@
   <body>
     
        
+
 <%- include('partials/header') %>
 
-<!-- Academic projects introduction -->
-<section>
-    <h1>My Academic Projects</h1>
-
+<!-- Projects page introduction -->
+<section class="p-4 mb-4">
+    <h1>My Projects</h1>
     <p>
-        Throughout my university studies, I have completed projects involving programming, networking, business, and leadership. Below are examples of my academic work.
+        Here are some academic projects I have completed
+        throughout my studies at Ontario Tech University.
     </p>
 </section>
 
-<!-- Individual academic projects -->
-<section>
-    <h2>Featured Projects</h2>
+<!-- Bootstrap project cards -->
+<section class="p-4 mb-4">
+    <h2>Academic Projects</h2>
 
-    <article>
-        <h3>Networking Case Study</h3>
-        <p>
-            In my Introduction to Networking II course, I examined a networking case study to identify technical problems and recommend possible solutions. This assignment strengthened my understanding of networking concepts and troubleshooting.
-        </p>
-    </article>
+    <div class="row g-4 mt-2">
 
-    <article>
-        <h3>Python Banking Application</h3>
-        <p>
-            For Introduction to Programming, I developed a Python application that allowed users to manage accounts, deposit and withdraw money, and check account balances. This project helped me practice programming logic and application development.
-        </p>
-    </article>
+        <!-- Networking project -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Networking Case Study
+                    </h3>
+                    <p class="card-text">
+                        Analyzed networking issues and
+                        proposed solutions to improve
+                        network performance and reliability.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <article>
-        <h3>Python Inventory Management System</h3>
-        <p>
-            I created an inventory management application using Python that supported adding, updating, and removing inventory items. It also provided information about stock levels. This assignment developed my skills in organizing and managing data through programming.
-        </p>
-    </article>
+        <!-- Python banking application -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Python Banking Application
+                    </h3>
+                    <p class="card-text">
+                        Developed a Python application
+                        that supports account management,
+                        deposits, withdrawals, and
+                        balance checking.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <article>
-        <h3>Business Creation Assignment</h3>
-        <p> 
-          In Management of the Enterprise, I developed a business plan for a hypothetical company. The assignment involved market research, marketing strategies, and financial planning.
-        </p>
-    </article>
+        <!-- Inventory management system -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Inventory Management System
+                    </h3>
+                    <p class="card-text">
+                        Created a Python inventory system
+                        that allows users to add, update,
+                        and remove inventory items.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <article>
-        <h3>Leadership Case Study</h3>
-        <p>
-            In Collaborative Leadership, I examined leadership approaches and their effectiveness in a case study. This project helped me improve my analytical, teamwork, and communication skills.
-        </p>
-    </article>
+        <!-- Business management project -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Business Development Project
+                    </h3>
+                    <p class="card-text">
+                        Developed a hypothetical business
+                        plan involving market research,
+                        marketing strategies, and
+                        financial projections.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership case study -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Leadership Case Study
+                    </h3>
+                    <p class="card-text">
+                        Evaluated leadership approaches
+                        and examined how leadership
+                        decisions influence teamwork
+                        and organizational outcomes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <%- include('partials/footer') %>
+
 
 
   </body>

@@ -7,66 +7,87 @@
   <body>
     
         
+
 <%- include('partials/header') %>
 
 <!-- Contact page introduction -->
-<section>
+<section class="p-4 mb-4">
     <h1>Contact Me</h1>
-
     <p>
-        Thank you for visiting my portfolio! If you would like to get in touch,
+        Thank you for visiting my portfolio!
+        If you would like to get in touch,
         please complete the form below.
     </p>
 </section>
 
-<!-- Contact form with HTML5 validation -->
-<section>
+<!-- Bootstrap contact form -->
+<section class="p-4 mb-4">
     <h2>Send a Message</h2>
 
     <form action="/contact" method="POST">
 
-        <p>
-            <label for="name">Full Name:</label>
+        <!-- Full name -->
+        <div class="mb-3">
+            <label for="name" class="form-label">
+                Full Name:
+            </label>
             <input type="text"
+                   class="form-control"
                    id="name"
                    name="name"
                    required>
-        </p>
+        </div>
 
-        <p>
-            <label for="email">Email Address:</label>
+        <!-- Email address -->
+        <div class="mb-3">
+            <label for="email" class="form-label">
+                Email Address:
+            </label>
             <input type="email"
+                   class="form-control"
                    id="email"
                    name="email"
                    required>
-        </p>
+        </div>
 
-        <p>
-            <label for="phone">Phone Number:</label>
+        <!-- Phone number -->
+        <div class="mb-3">
+            <label for="phone" class="form-label">
+                Phone Number:
+            </label>
             <input type="tel"
+                   class="form-control"
                    id="phone"
                    name="phone"
                    pattern="[0-9]{10}"
                    title="Enter a 10-digit phone number"
                    required>
-        </p>
+        </div>
 
-        <p>
-            <label for="message">Message:</label>
-            <textarea id="message"
+        <!-- Message -->
+        <div class="mb-3">
+            <label for="message" class="form-label">
+                Message:
+            </label>
+            <textarea class="form-control"
+                      id="message"
                       name="message"
                       rows="5"
                       required></textarea>
-        </p>
+        </div>
 
-        <p>
-            <button type="submit">Submit Message</button>
-        </p>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"
+               aria-hidden="true"></i>
+            Submit Message
+        </button>
 
     </form>
 </section>
 
 <%- include('partials/footer') %>
+
 
 
   </body>

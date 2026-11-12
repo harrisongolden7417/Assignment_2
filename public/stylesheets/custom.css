@@ -83,3 +83,55 @@ img, video {
     max-width: 100%;
     height: auto;
 }
+
+
+
+/* Project cards */
+.card {
+    background-color: #160D24;
+    color: #F5F5F5;
+    border: 1px solid #6700ED;
+    border-radius: 10px;
+}
+
+/* Project card headings */
+.card-title {
+    color: #ED66D7;
+}
+
+/* Project card descriptions */
+.card-text {
+    color: #F5F5F5;
+}
+
+
+
+/* Contact form labels */
+.form-label {
+    color: #F5F5F5;
+}
+
+/* Contact form input fields */
+.form-control {
+    background-color: #F5F5F5;
+    color: #160D24;
+    border: 2px solid #6700ED;
+}
+
+/* Contact form input focus */
+.form-control:focus {
+    border-color: #ED66D7;
+    box-shadow: 0 0 5px #ED66D7;
+}
+
+/* Bootstrap buttons */
+.btn-primary {
+    background-color: #6700ED;
+    border-color: #6700ED;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #B400ED;
+    border-color: #B400ED;
+}
